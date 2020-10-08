@@ -9,11 +9,10 @@
 
 /* Comment pretending there was a change from another user */
 
-/* Trenton Wayne South was here */
 
 /* basic elements */
 html {
-	margin: 20;
+	margin: 0;
 	padding: 0;
 	}
 body { 
@@ -21,8 +20,8 @@ body {
 	line-height: 1.88889;
 	color: #555753; 
 	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 10; 
-	padding: 10;
+	margin: 0; 
+	padding: 0;
 	}
 p { 
 	margin-top: 0; 
