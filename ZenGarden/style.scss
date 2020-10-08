@@ -1,0 +1,30 @@
+//variables
+//colors
+
+
+
+
+//breakpoints
+$break-small: 600px;
+$break-large: 601px;
+
+//mixins
+@mixin breakpoint($break) {
+    @if $break==large {
+        @media (min-width: $break-large, ) {
+            @content;
+        }
+    }
+
+    @else if $break==small {
+        @media (max-width: $break-small) {
+            @content;
+        }
+    }
+
+    @else {
+        @media ($break) {
+            @content;
+        }
+    }
+}
