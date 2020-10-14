@@ -22,24 +22,26 @@ h3 {
   font: italic normal 1.4em georgia, sans-serif;
   letter-spacing: 1px;
   margin-bottom: 0;
-  color: #7D775C;
+  color: #7d775c;
 }
 
 a:link {
   font-weight: bold;
   text-decoration: none;
-  color: #B7A5DF;
+  color: #b7a5df;
 }
 
 a:visited {
   font-weight: bold;
   text-decoration: none;
-  color: #D4CDDC;
+  color: #d4cddc;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   text-decoration: underline;
-  color: #9685BA;
+  color: #9685ba;
 }
 
 abbr {
@@ -93,13 +95,13 @@ header {
 }
 
 .summary p {
-  font: italic 1.1em/2.2 georgia;
+  font: italic 1.1em/2.2 georgia, serif;
   text-align: center;
 }
 
 .preamble {
   clear: right;
-  padding: 0px 10px 0 10px;
+  padding: 0 10px;
 }
 
 .supporting {
@@ -111,7 +113,8 @@ footer {
   text-align: center;
 }
 
-footer a:link, footer a:visited {
+footer a:link,
+footer a:visited {
   margin-right: 20px;
 }
 
@@ -170,11 +173,11 @@ footer a:link, footer a:visited {
 }
 
 .sidebar li a:link {
-  color: #988F5E;
+  color: #988f5e;
 }
 
 .sidebar li a:visited {
-  color: #B3AE94;
+  color: #b3ae94;
 }
 
 .extra1 {
