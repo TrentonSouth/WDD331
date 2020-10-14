@@ -49,7 +49,7 @@ header {
 		display: inline-block;
 	}
 
-	@include MQ(M) {
+	@include mq(M) {
 		height: 80px;
 		@include clearfix;
 	}
@@ -68,7 +68,7 @@ header {
 		@include transform(translateX(-50%) translateY(-50%));
 	}
 
-	@include MQ(L) {
+	@include mq(L) {
 		margin-left: 5%;
 	}
 }
@@ -116,7 +116,7 @@ header {
 		}
 	}
 
-	@include MQ(M) {
+	@include mq(M) {
 		display: none;
 	}
 }
@@ -144,7 +144,7 @@ header {
 		border-top-width: 1px;
 	}
 
-	@include MQ(M) {
+	@include mq(M) {
 		position: static;
 		display: table;
 		@include transform(translateY(0));
@@ -173,7 +173,7 @@ header {
 		}
 	}
 
-	@include MQ(L) {
+	@include mq(L) {
 		display: none;
 	}
 }
@@ -247,7 +247,7 @@ header {
 		transition: opacity .2s 0s, visibility 0s 0s;
 	}
 
-	@include MQ(M) {
+	@include mq(M) {
 		display: block;
 
 		span {
@@ -256,7 +256,7 @@ header {
 		}
 	}
 
-	@include MQ(L) {
+	@include mq(L) {
 		right: 5%;
 	}
 }
@@ -272,11 +272,11 @@ main {
 		margin: 3em 0;
 	}
 
-	@include MQ(M) {
+	@include mq(M) {
 		padding-top: 80px;
 	}
 
-	@include MQ(L) {
+	@include mq(L) {
 		max-width: none;
 		padding: 120px 0 50px;
 
@@ -335,11 +335,11 @@ section {
 		content: '10. ';
 	}
 
-	@include MQ(S) {
+	@include mq(S) {
 		margin: 3em 0 5em;
 	}
 
-	@include MQ(L) {
+	@include mq(L) {
 		@include column(.48);
 		margin: 0 4% 4em 0;
 
@@ -395,7 +395,7 @@ section {
 		}
 	}
 
-	@include MQ(S) {
+	@include mq(S) {
 		.cd-box {
 			@include column(.49);
 			margin: 0 2% 2em 0;
@@ -517,7 +517,7 @@ section {
 		}
 	}
 
-	@include MQ(S) {
+	@include mq(S) {
 		li {
 			@include column(.19);
 			margin: 0 1.25% 1em 0;
@@ -539,7 +539,7 @@ section {
 .cd-form .cd-box {
 	padding: 1em;
 
-	@include MQ(S) {
+	@include mq(S) {
 		.cd-box {
 			padding: 2em;
 		}
@@ -572,7 +572,7 @@ section {
 		margin: .4em;
 	}
 
-	@include MQ(M) {
+	@include mq(M) {
 		button {
 			margin: 1em;
 		}
