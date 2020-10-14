@@ -3,71 +3,26 @@
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
 
-// color palette - these colors will be the color swatches of the Colors section
+//xBackground 
 
-$color-1: #8fd4ff; // Blue
-$color-2: #ffe733; // Yellow
-$color-3: #e22840; // Red
-$color-4: #fff; // White
-$color-5: #000; // Black
+@import 'partials/background';
 
-// additional colors
+//xPatterns
 
-$success: #6fce72; // green
-$alert: $color-3; // red
+@import 'partials/patterns';
 
-// fonts
-$primary-font: 'Open Sans', sans-serif;
-$secondary-font: 'Press Start 2P', cursive;
-
-/* -------------------------------- 
-
-xBackground 
-
--------------------------------- */
-
-body {
-  // this is the page background
-  background-color: $color-5;
-}
-
-/* -------------------------------- 
-
-xPatterns
-
--------------------------------- */
-
-.cd-box {
-  // this is the container of various design elements - i.e. the 2 logo of the branding section
-  background: $color-5;
-  border: 1px solid $color-4;
-  border-radius: 3px;
-  box-shadow: 0 1px 1px (#000, .05);
-  padding: 6px;
-}
-
-/* -------------------------------- 
-
-xNavigation 
-
--------------------------------- */
+//xNavigation 
 
 @import 'partials/navigation';
 
-/* -------------------------------- 
-
-xTypography 
-
--------------------------------- */
+//xTypography 
 
 @import 'partials/typography';
 
-/* -------------------------------- 
-
-xButtons 
-
--------------------------------- */
+//xButtons 
 
 @import 'partials/buttons';
+
+//xBasicStyle
 
 @import 'partials/basic-style';
