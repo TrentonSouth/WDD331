@@ -30,7 +30,7 @@ colorBoxes.forEach(function(element) {
 		buttons
   ********************/
 
-const buttonsWrapper = document.querySelector('#buttons .cd-box'),
+/* const buttonsWrapper = document.querySelector('#buttons .cd-box'),
   buttonsHtml = buttonsWrapper.innerHTML;
 const containerHtml = document.createElement('div');
 containerHtml.classList.add('cd-box');
@@ -53,7 +53,7 @@ buttonsHtmlText.map(function(value) {
       document.createTextNode('"' + block2[1] + '</button>')
     );
   }
-});
+}); */
 
 /*******************
 		typography
