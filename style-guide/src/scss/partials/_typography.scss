@@ -1,20 +1,20 @@
 h1,
 h2 {
-  font-family: $secondary-font;
   color: $color-2;
+  font-family: $secondary-font;
 }
 
 h1 {
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 1.2;
-  margin: 0 0 0.4em;
+  margin: 0 0 .4em;
 
-  @include MQ(S) {
+  @include mq(S) {
     font-size: 3.2rem;
   }
 
-  @include MQ(M) {
+  @include mq(M) {
     font-size: 4rem;
   }
 }
@@ -22,28 +22,30 @@ h1 {
 h2 {
   margin: 1em 0;
 
-  @include MQ(S) {
+  @include mq(S) {
     font-size: 1.8rem;
     margin: 1em 0 1.4em;
   }
 }
 
-section > h2::before {
-  /* number before each section title */
-  color: darken($color-4, 15%);
+section > h2 {
+  &::before {
+    // number before each section title
+    color: darken($color-4, 15%);
+  }
 }
 
 p {
+  color: lighten($color-2, 25%);
   font-size: 1.4rem;
   line-height: 1.4;
-  color: lighten($color-2, 25%);
 
   a {
     color: $color-1;
     text-decoration: underline;
   }
 
-  @include MQ(S) {
+  @include mq(S) {
     font-size: 1.6rem;
     line-height: 1.6;
   }
