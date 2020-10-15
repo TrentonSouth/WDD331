@@ -2,16 +2,6 @@ header {
   background-color: $color-2;
 }
 
-.cd-logo {
-  // logo box style
-  background-color: $color-1;
-  width: 120px;
-
-  @include mq(M) {
-    width: 180px;
-  }
-}
-
 .cd-main-nav {
   // main navigation background color - full screen on small devices
   background: $color-2;
@@ -27,7 +17,7 @@ header {
         a {
           color: $color-3;
 
-          &.selected {
+          .selected {
             box-shadow: 0 2px 0 $color-1;
             color: $color-5;
           }
@@ -65,26 +55,6 @@ header {
         // preserve visibility of upper and lower lines - close icon
         background-color: ($color-5, 1);
       }
-    }
-  }
-}
-
-.cd-download {
-  // download button top-right visible on big devices
-  background-color: lighten($color-2, 10%);
-
-  .no-touch &:hover {
-    background-color: lighten($color-2, 15%);
-  }
-
-  span {
-    // tooltip
-    background: $color-1;
-    color: $color-5;
-
-    &::before {
-      // right arrow color
-      border-color: $color-1;
     }
   }
 }
