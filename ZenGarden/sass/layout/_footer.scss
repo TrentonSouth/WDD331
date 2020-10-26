@@ -1,0 +1,35 @@
+footer {
+  text-align: center;
+}
+
+footer > * {
+  border-radius: $button-radius;
+  color: $color-6;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer :first-child {
+  background-color: $color-1;
+  padding: 10px 19px;
+}
+
+footer :nth-child(2) {
+  background-color: $color-2;
+  padding: 10px 27px;
+}
+
+footer :nth-child(3) {
+  background-color: $color-3;
+  padding: 10px 30px;
+}
+
+footer :nth-child(4) {
+  background-color: $color-4;
+  padding: 10px 23px;
+}
+
+footer :nth-child(5) {
+  background-color: $color-5;
+  padding: 10px 30px;
+}
