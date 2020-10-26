@@ -17,7 +17,7 @@ h1 {
   @include breakpoint(large) {
     font-size: 4rem;
   }
- }
+}
 
 h2 {
   font-size: 1.5rem;
@@ -49,16 +49,8 @@ div {
   text-align: right;
 }
 
-.main supporting {
-
-}
-
 .participation {
   text-align: right;
-}
-
-.benefits {
-
 }
 
 .requirements {
@@ -70,7 +62,81 @@ div {
   text-align: center;
 }
 
+.next,
+.viewall {
 
+  a {
+    background-color: $color-2;
+    border-radius: $button-radius;
+    color: $color-6;
+    display: inline-block;
+    margin: .2rem;
+    text-decoration: none;
+  }
+}
+
+.next {
+  a {
+    padding: 10px 30px;
+  }
+}
+
+.viewall {
+  a {
+    padding: 10px 23px;
+  }
+}
+
+.design-archives {
+  text-align: right;
+}
+
+.view-css,
+.css-resources,
+.zen-faq,
+.zen-submit,
+.zen-translations {
+  display: inline-block;
+  margin: 1.2rem;
+
+  a {
+    border-radius: $button-radius;
+    color: $color-6;
+    display: inline;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+}
+
+.view-css {
+  a {
+    background-color: $color-1;
+  }
+}
+
+.css-resources {
+  a {
+    background-color: $color-2;
+  }
+}
+
+.zen-faq {
+  a {
+    background-color: $color-3;
+  }
+}
+
+.zen-submit {
+  a {
+    background-color: $color-4;
+  }
+}
+
+.zen-translations {
+  a {
+    background-color: $color-5;
+  }
+}
 
 // basic elements 
 /*

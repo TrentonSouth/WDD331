@@ -3,7 +3,7 @@ footer {
 }
 
 footer > * {
-  border-radius: 40%;
+  border-radius: $button-radius;
   color: $color-6;
   text-decoration: none;
   text-transform: uppercase;

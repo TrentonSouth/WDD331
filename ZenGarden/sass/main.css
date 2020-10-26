@@ -204,6 +204,69 @@ div {
   text-align: center;
 }
 
+.next a,
+.viewall a {
+  background-color: #ffe733;
+  border-radius: 40%;
+  color: #fff;
+  display: inline-block;
+  margin: .2rem;
+  text-decoration: none;
+}
+
+.next a {
+  padding: 10px 30px;
+}
+
+.viewall a {
+  padding: 10px 23px;
+}
+
+.design-archives {
+  text-align: right;
+}
+
+.view-css,
+.css-resources,
+.zen-faq,
+.zen-submit,
+.zen-translations {
+  display: inline-block;
+  margin: 1.2rem;
+}
+
+.view-css a,
+.css-resources a,
+.zen-faq a,
+.zen-submit a,
+.zen-translations a {
+  border-radius: 40%;
+  color: #fff;
+  display: inline;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.view-css a {
+  background-color: #8fd4ff;
+}
+
+.css-resources a {
+  background-color: #ffe733;
+}
+
+.zen-faq a {
+  background-color: #e22840;
+}
+
+.zen-submit a {
+  background-color: #ffc0cb;
+}
+
+.zen-translations a {
+  background-color: #ffa500;
+}
+
 /*
 a:link { 
 	font-weight: bold; 
@@ -391,27 +454,5 @@ footer :nth-child(4) {
 footer :nth-child(5) {
   background-color: #ffa500;
   padding: 10px 30px;
-}
-
-.next a,
-.viewall a {
-  background-color: #ffe733;
-  border-radius: 40%;
-  color: #fff;
-  display: inline-block;
-  margin: .2rem;
-  text-decoration: none;
-}
-
-.next a {
-  padding: 24px 30px;
-}
-
-.viewall a {
-  padding: 25px 23px;
-}
-
-.design-archives {
-  text-align: right;
 }
 /*# sourceMappingURL=main.css.map */
