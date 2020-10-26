@@ -232,7 +232,7 @@ div {
 .zen-submit,
 .zen-translations {
   display: inline-block;
-  margin: 1.2rem;
+  margin: 1rem 0;
 }
 
 .view-css a,
