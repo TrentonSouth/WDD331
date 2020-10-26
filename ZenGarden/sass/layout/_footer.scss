@@ -1,0 +1,30 @@
+footer {
+  text-align: center;
+}
+
+footer > * {
+  border-radius: 40%;
+  color: $color-6;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+footer :first-child {
+  background-color: $color-1;
+}
+
+footer :nth-child(2) {
+  background-color: $color-2;
+}
+
+footer :nth-child(3) {
+  background-color: $color-3;
+}
+
+footer :nth-child(4) {
+  background-color: $color-4;
+}
+
+footer :nth-child(5) {
+  background-color: $color-5;
+}

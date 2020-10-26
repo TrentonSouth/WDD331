@@ -200,8 +200,8 @@ div {
 }
 
 .requirements :last-child {
-  text-align: center;
   padding: 2rem 0;
+  text-align: center;
 }
 
 /*
@@ -357,4 +357,49 @@ footer a:link, footer a:visited {
 	width: 148px; 
 	height: 110px;
 	} */
+footer {
+  text-align: center;
+}
+
+footer > * {
+  border-radius: 40%;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+footer :first-child {
+  background-color: #8fd4ff;
+}
+
+footer :nth-child(2) {
+  background-color: #ffe733;
+}
+
+footer :nth-child(3) {
+  background-color: #e22840;
+}
+
+footer :nth-child(4) {
+  background-color: #ffc0cb;
+}
+
+footer :nth-child(5) {
+  background-color: #ffa500;
+}
+
+.next a,
+.viewall a {
+  background-color: #ffe733;
+  border-radius: 40%;
+  color: #fff;
+  display: inline-block;
+  margin: .2rem;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.design-archives {
+  text-align: right;
+}
 /*# sourceMappingURL=main.css.map */
