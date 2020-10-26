@@ -10,5 +10,5 @@ $color-4: #fff; // White
 $color-5: #000; // Black
 
 // fonts
-$primary-font: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&display=swap');$primary-font: 'Open Sans', sans-serif;
 $secondary-font: 'Press Start 2P', cursive;
