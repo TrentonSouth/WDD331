@@ -7,8 +7,19 @@
     color: $color-6;
     display: inline-block;
     margin: .2rem;
-    padding: 10px 20px;
     text-decoration: none;
+  }
+}
+
+.next {
+  a {
+    padding: 24px 30px;
+  }
+}
+
+.viewall {
+  a {
+    padding: 25px 23px;
   }
 }
 

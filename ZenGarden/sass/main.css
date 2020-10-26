@@ -364,28 +364,33 @@ footer {
 footer > * {
   border-radius: 40%;
   color: #fff;
-  padding: 10px 20px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 footer :first-child {
   background-color: #8fd4ff;
+  padding: 10px 19px;
 }
 
 footer :nth-child(2) {
   background-color: #ffe733;
+  padding: 10px 27px;
 }
 
 footer :nth-child(3) {
   background-color: #e22840;
+  padding: 10px 30px;
 }
 
 footer :nth-child(4) {
   background-color: #ffc0cb;
+  padding: 10px 23px;
 }
 
 footer :nth-child(5) {
   background-color: #ffa500;
+  padding: 10px 30px;
 }
 
 .next a,
@@ -395,8 +400,15 @@ footer :nth-child(5) {
   color: #fff;
   display: inline-block;
   margin: .2rem;
-  padding: 10px 20px;
   text-decoration: none;
+}
+
+.next a {
+  padding: 24px 30px;
+}
+
+.viewall a {
+  padding: 25px 23px;
 }
 
 .design-archives {
