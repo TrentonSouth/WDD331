@@ -33,9 +33,11 @@ h3 {
   font-size: 1.5rem;
 }
 
+/* Please don't do this at the root element. Choose your divs. It messes up pacman.
 div {
   padding: 1.5rem .5rem;
 }
+*/
 
 .summary {
   text-align: right;
