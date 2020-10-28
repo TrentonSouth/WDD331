@@ -33,6 +33,14 @@ h3 {
   font-size: 1.5rem;
 }
 
+p {
+  padding-bottom: 1rem;
+}
+
+abbr {
+  color: $color-2;
+}
+
 /* Please don't do this at the root element. Choose your divs. It messes up pacman.
 div {
   padding: 1.5rem .5rem;
@@ -40,6 +48,7 @@ div {
 */
 
 .summary {
+  margin: 2.5rem 1.5rem;
   text-align: right;
 }
 
@@ -48,14 +57,25 @@ div {
 }
 
 .preamble {
+  margin: 2.5rem 1.5rem;
   text-align: right;
+}
+
+.explanation {
+  margin: 2.5rem 1.5rem;
 }
 
 .participation {
+  margin: 2.5rem 1.5rem;
   text-align: right;
 }
 
+.benefits {
+  margin: 2.5rem 1.5rem;
+}
+
 .requirements {
+  margin: 2.5rem 1.5rem;
   text-align: right;
 }
 
@@ -64,11 +84,23 @@ div {
   text-align: center;
 }
 
+.design-selection {
+  padding: 2.5rem 1.5rem;
+}
+
+.design-archives {
+  padding: 2.5rem 1.5rem;
+  text-align: right;
+}
+
+.zen-resources {
+  padding: 2.5rem 1.5rem;
+}
+
 .next,
 .viewall {
 
   a {
-    background-color: $color-2;
     border-radius: $button-radius;
     color: $color-6;
     display: inline-block;
@@ -79,18 +111,16 @@ div {
 
 .next {
   a {
+    background-color: $color-3;
     padding: 10px 30px;
   }
 }
 
 .viewall {
   a {
+    background-color: $color-4;
     padding: 10px 23px;
   }
-}
-
-.design-archives {
-  text-align: right;
 }
 
 .view-css,
@@ -112,19 +142,31 @@ div {
 
 .view-css {
   a {
-    background-color: $color-1;
+    background-color: $color-5;
+  }
+
+  abbr {
+    color: $color-6;
   }
 }
 
 .css-resources {
   a {
-    background-color: $color-2;
+    background-color: $color-1;
+  }
+
+  abbr {
+    color: $color-6;
   }
 }
 
 .zen-faq {
   a {
     background-color: $color-3;
+  }
+
+  abbr {
+    color: $color-6;
   }
 }
 

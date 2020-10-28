@@ -6,14 +6,6 @@
   box-sizing: $type;
 }
 
-@mixin clearfix {
-  &::after {
-    clear: both;
-    content: '';
-    display: block;
-  }
-}
-
 @mixin transform($options) {
   -moz-transform: $options;
   -ms-transform: $options;

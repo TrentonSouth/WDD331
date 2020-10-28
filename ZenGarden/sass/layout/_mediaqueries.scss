@@ -5,7 +5,7 @@
       @content;
     }
   } @else if $break == medium {
-    @media(max-width: $break-medium) {
+    @media(min-width: $break-medium) {
       @content;
     }
   } @else if $break == small {

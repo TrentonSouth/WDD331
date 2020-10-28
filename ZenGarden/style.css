@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&display=swap");
 html {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
-
-.clearfix ::after {
-  clear: both;
-  content: ' ';
-  display: block; }
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
 
 html,
 body,
@@ -98,7 +97,8 @@ video {
   font-size: 100%;
   margin: 0;
   padding: 0;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 article,
 aside,
@@ -112,60 +112,88 @@ menu,
 nav,
 section,
 main {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol,
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote,
 q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote::before,
 blockquote::after,
 q::before,
 q::after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 body {
-  background-color: #000; }
+  background-color: #000;
+}
 
 body {
   color: #fff;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+}
 
 h1 {
   color: #ffe733;
   font-family: "Press Start 2P", cursive;
   font-size: 2.5rem;
   font-weight: 300;
-  padding: .5rem; }
-  @media (max-width: 1023px) {
-    h1 {
-      font-size: 3rem; } }
-  @media (min-width: 1024px) {
-    h1 {
-      font-size: 4rem; } }
+  padding: .5rem;
+}
+
+@media (min-width: 481px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
 
 h2 {
   font-size: 1.5rem;
-  padding: 0 .5rem 1rem; }
-  @media (min-width: 1024px) {
-    h2 {
-      font-size: 2.5rem;
-      margin: 1em 0 1.4em; } }
+  padding: 0 .5rem 1rem;
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 2.5rem;
+    margin: 1em 0 1.4em;
+  }
+}
 
 h3 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+abbr {
+  color: #ffe733;
+}
 
 /* Please don't do this at the root element. Choose your divs. It messes up pacman.
 div {
@@ -173,41 +201,73 @@ div {
 }
 */
 .summary {
-  text-align: right; }
+  margin: 2.5rem 1.5rem;
+  text-align: right;
+}
 
 .summary :last-child {
-  padding: 1.5rem 0; }
+  padding: 1.5rem 0;
+}
 
 .preamble {
-  text-align: right; }
+  margin: 2.5rem 1.5rem;
+  text-align: right;
+}
+
+.explanation {
+  margin: 2.5rem 1.5rem;
+}
 
 .participation {
-  text-align: right; }
+  margin: 2.5rem 1.5rem;
+  text-align: right;
+}
+
+.benefits {
+  margin: 2.5rem 1.5rem;
+}
 
 .requirements {
-  text-align: right; }
+  margin: 2.5rem 1.5rem;
+  text-align: right;
+}
 
 .requirements :last-child {
   padding: 2rem 0;
-  text-align: center; }
+  text-align: center;
+}
+
+.design-selection {
+  padding: 2.5rem 1.5rem;
+}
+
+.design-archives {
+  padding: 2.5rem 1.5rem;
+  text-align: right;
+}
+
+.zen-resources {
+  padding: 2.5rem 1.5rem;
+}
 
 .next a,
 .viewall a {
-  background-color: #ffe733;
   border-radius: 40%;
   color: #fff;
   display: inline-block;
   margin: .2rem;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .next a {
-  padding: 10px 30px; }
+  background-color: #e22840;
+  padding: 10px 30px;
+}
 
 .viewall a {
-  padding: 10px 23px; }
-
-.design-archives {
-  text-align: right; }
+  background-color: #ffc0cb;
+  padding: 10px 23px;
+}
 
 .view-css,
 .css-resources,
@@ -215,32 +275,52 @@ div {
 .zen-submit,
 .zen-translations {
   display: inline-block;
-  margin: 1rem 0; }
-  .view-css a,
-  .css-resources a,
-  .zen-faq a,
-  .zen-submit a,
-  .zen-translations a {
-    border-radius: 40%;
-    color: #fff;
-    display: inline;
-    padding: 10px 20px;
-    text-decoration: none; }
+  margin: 1rem 0;
+}
+
+.view-css a,
+.css-resources a,
+.zen-faq a,
+.zen-submit a,
+.zen-translations a {
+  border-radius: 40%;
+  color: #fff;
+  display: inline;
+  padding: 10px 20px;
+  text-decoration: none;
+}
 
 .view-css a {
-  background-color: #8fd4ff; }
+  background-color: #ffa500;
+}
+
+.view-css abbr {
+  color: #fff;
+}
 
 .css-resources a {
-  background-color: #ffe733; }
+  background-color: #8fd4ff;
+}
+
+.css-resources abbr {
+  color: #fff;
+}
 
 .zen-faq a {
-  background-color: #e22840; }
+  background-color: #e22840;
+}
+
+.zen-faq abbr {
+  color: #fff;
+}
 
 .zen-submit a {
-  background-color: #ffc0cb; }
+  background-color: #ffc0cb;
+}
 
 .zen-translations a {
-  background-color: #ffa500; }
+  background-color: #ffa500;
+}
 
 /*
 a:link { 
@@ -396,33 +476,55 @@ footer a:link, footer a:visited {
 	height: 110px;
 	} */
 footer {
-  text-align: center; }
+  text-align: center;
+}
 
 footer > * {
   border-radius: 40%;
   color: #fff;
+  margin: 3.5rem 0;
+  padding: 10px;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 footer :first-child {
   background-color: #8fd4ff;
-  padding: 10px 19px; }
+}
 
 footer :nth-child(2) {
-  background-color: #ffe733;
-  padding: 10px 27px; }
+  background-color: #e22840;
+}
 
 footer :nth-child(3) {
-  background-color: #e22840;
-  padding: 10px 30px; }
+  background-color: #ffc0cb;
+}
 
 footer :nth-child(4) {
-  background-color: #ffc0cb;
-  padding: 10px 23px; }
+  background-color: #ffa500;
+}
 
 footer :nth-child(5) {
-  background-color: #ffa500;
-  padding: 10px 30px; }
+  background-color: #8fd4ff;
+}
+
+@media (min-width: 481px) {
+  footer :first-child {
+    padding: 10px 19px;
+  }
+  footer :nth-child(2) {
+    padding: 10px 27px;
+  }
+  footer :nth-child(3) {
+    padding: 10px 30px;
+  }
+  footer :nth-child(4) {
+    padding: 10px 23px;
+  }
+  footer :nth-child(5) {
+    padding: 10px 30px;
+  }
+}
 
 .extra1 {
   border-radius: 50%;
@@ -432,13 +534,15 @@ footer :nth-child(5) {
   -webkit-transform-origin: bottom;
   transform-origin: bottom;
   -webkit-animation: eating-top 0.5s infinite;
-  animation: eating-top 0.5s infinite; }
+  animation: eating-top 0.5s infinite;
+}
 
 .extra1,
 .extra1::before {
   width: 70px;
   height: calc(70px/2);
-  background: #fed75a; }
+  background: #fed75a;
+}
 
 .extra1::before {
   content: '';
@@ -451,7 +555,8 @@ footer :nth-child(5) {
   -webkit-transform: rotate(80deg);
   transform: rotate(80deg);
   -webkit-animation: eating-bottom 0.5s infinite;
-  animation: eating-bottom 0.5s infinite; }
+  animation: eating-bottom 0.5s infinite;
+}
 
 .extra1::after {
   position: absolute;
@@ -465,34 +570,120 @@ footer :nth-child(5) {
   -webkit-transform-origin: pac-man-center;
   transform-origin: pac-man-center;
   -webkit-animation: pac-man-center 0.5s infinite, pacman-pellet 0.5s -0.33s infinite linear;
-  animation: pac-man-center 0.5s infinite, pacman-pellet 0.5s -0.33s infinite linear; }
+  animation: pac-man-center 0.5s infinite, pacman-pellet 0.5s -0.33s infinite linear;
+}
+
+@-webkit-keyframes eating-top {
+  0% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+}
 
 @keyframes eating-top {
   0% {
-    transform: rotate(-40deg); }
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
   50% {
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
   100% {
-    transform: rotate(-40deg); } }
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+}
+
+@-webkit-keyframes eating-bottom {
+  0% {
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
+}
+
 @keyframes eating-bottom {
   0% {
-    transform: rotate(80deg); }
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
   50% {
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
   100% {
-    transform: rotate(80deg); } }
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
+}
+
+@-webkit-keyframes pac-man-center {
+  0% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
 @keyframes pac-man-center {
   0% {
-    transform: rotate(40deg); }
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
   50% {
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
   100% {
-    transform: rotate(40deg); } }
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
+@-webkit-keyframes pacman-pellet {
+  0% {
+    opacity: 7;
+    -webkit-box-shadow: 70px 0 0 0 white, 120px 0 0 0 white, 170px 0 0 0 white, 220px 0 0 0 white;
+            box-shadow: 70px 0 0 0 white, 120px 0 0 0 white, 170px 0 0 0 white, 220px 0 0 0 white;
+  }
+  100% {
+    -webkit-box-shadow: 20px 0 0 0 white, 70px 0 0 0 white, 120px 0 0 0 white, 170px 0 0 0 white;
+            box-shadow: 20px 0 0 0 white, 70px 0 0 0 white, 120px 0 0 0 white, 170px 0 0 0 white;
+  }
+}
+
 @keyframes pacman-pellet {
   0% {
     opacity: 7;
-    box-shadow: 70px 0 0 0 white, 120px 0 0 0 white, 170px 0 0 0 white, 220px 0 0 0 white; }
+    -webkit-box-shadow: 70px 0 0 0 white, 120px 0 0 0 white, 170px 0 0 0 white, 220px 0 0 0 white;
+            box-shadow: 70px 0 0 0 white, 120px 0 0 0 white, 170px 0 0 0 white, 220px 0 0 0 white;
+  }
   100% {
-    box-shadow: 20px 0 0 0 white, 70px 0 0 0 white, 120px 0 0 0 white, 170px 0 0 0 white; } }
-
+    -webkit-box-shadow: 20px 0 0 0 white, 70px 0 0 0 white, 120px 0 0 0 white, 170px 0 0 0 white;
+            box-shadow: 20px 0 0 0 white, 70px 0 0 0 white, 120px 0 0 0 white, 170px 0 0 0 white;
+  }
+}
 /*# sourceMappingURL=style.css.map */
