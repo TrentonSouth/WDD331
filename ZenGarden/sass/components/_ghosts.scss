@@ -1,16 +1,69 @@
 // Animation Styles
 
 .extra2 {
-  animation: enterRight .5s ease both;
+  animation: enterLeft .5s ease both;
+  content: url('./svg/blue_ghost.svg');
   overflow: hidden;
   position: relative;
   width: auto;
+
+  &:hover {
+    content: url('./svg/dark_blue_ghost.svg');
+  }
+}
+
+.extra3 {
+  animation: enterRight .5s ease both;
+  content: url('./svg/red_ghost.svg');
+  overflow: hidden;
+  position: relative;
+  width: auto;
+
+  &:hover {
+    content: url('./svg/dark_blue_ghost.svg');
+  }
+}
+
+.extra4 {
+  animation: enterLeft .5s ease both;
+  content: url('./svg/pink_ghost.svg');
+  overflow: hidden;
+  position: relative;
+  width: auto;
+
+  &:hover {
+    content: url('./svg/dark_blue_ghost.svg');
+  }
+}
+
+.extra5 {
+  animation: enterRight .5s ease both;
+  content: url('./svg/orange_ghost.svg');
+  overflow: hidden;
+  position: relative;
+  width: auto;
+
+  &:hover {
+    content: url('./svg/dark_blue_ghost.svg');
+  }
+}
+
+.extra6 {
+  animation: enterLeft .5s ease both;
+  content: url('./svg/blue_ghost.svg');
+  overflow: hidden;
+  position: relative;
+  width: auto;
+
+  &:hover {
+    content: url('./svg/dark_blue_ghost.svg');
+  }
 }
 
 @keyframes enterRight {
   0% {
     opacity: 0;
-    right: -150px;
+    right: -2150px;
   }
 
   90% {
@@ -22,18 +75,10 @@
   }
 }
 
-.extra3 {
-  animation: enterLeft .5 ease both;
-  overflow: hidden;
-  position: relative;
-  width: auto;
-}
-
 @keyframes enterLeft {
   0% {
-    left: -150px;
+    left: -2150px;
     opacity: 0;
-
   }
 
   90% {
