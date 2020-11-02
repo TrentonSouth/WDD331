@@ -1,86 +1,110 @@
-$pacmanColor: #fed75a;
-$pelletColor: white;
+$pacman-color: #fed75a;
+$pellet-color: white;
 $pacman-size: 70px;
 
 
 .extra1 {
-  border-radius: 50%;
-  margin: 0 0;
-  margin-top: 5em;
   border-radius: 100em 100em 0 0;
+  margin: 5em 0 0;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
-  -webkit-animation: eating-top 0.5s infinite;
-          animation: eating-top 0.5s infinite;
+  -webkit-animation: eating-top .5s infinite;
+          animation: eating-top .5s infinite;
 }
+
 .extra1,
 .extra1::before {
-  width: $pacman-size;
+  background: $pacman-color;
   height: calc(70px/2);
-  background: $pacmanColor;
+  width: $pacman-size;
 }
+
 .extra1::before {
+  border-radius: 0 0 100em 100em;
   content: '';
   display: block;
   margin-top: calc(70px/2);
   position: absolute;
   -webkit-transform-origin: top;
           transform-origin: top;
-  border-radius: 0 0 100em 100em;
   -webkit-transform: rotate(80deg);
           transform: rotate(80deg);
-  -webkit-animation: eating-bottom 0.5s infinite;
-          animation: eating-bottom 0.5s infinite;
+  -webkit-animation: eating-bottom .5s infinite;
+          animation: eating-bottom .5s infinite;
 }
+
 .extra1::after {
-  position: absolute;
   border-radius: 100em;
   content: '';
   display: block;
   height: 20px;
-  width: 20px;
-  margin-top: calc((70px / 2) - 10px);
   margin-left: calc((70px / 2) - 10px);
+  margin-top: calc((70px / 2) - 10px);
+  position: absolute;
+  width: 20px;
   -webkit-transform-origin: pac-man-center;
           transform-origin: pac-man-center;
-  -webkit-animation: pac-man-center 0.5s infinite, pacman-pellet 0.5s -0.33s infinite linear;
-          animation: pac-man-center 0.5s infinite, pacman-pellet 0.5s -0.33s infinite linear;
-}
-@keyframes eating-top{
-  0%{ transform: rotate(-40deg); }
-  50% { transform: rotate(0deg); }
-  100%{ transform: rotate(-40deg); }
+  -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+          animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
 }
 
-@keyframes eating-bottom{
-  0%{ transform: rotate(80deg); }
-  50% { transform: rotate(0deg); }
-  100%{ transform: rotate(80deg); }
+@keyframes eating-top {
+  0% {
+    transform: rotate(-40deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-40deg);
+  }
 }
 
-@keyframes pac-man-center{
-  0%{ transform: rotate(40deg); }
-  50% { transform: rotate(0deg); }
-  100%{ transform: rotate(40deg); }
+@keyframes eating-bottom {
+  0% {
+    transform: rotate(80deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(80deg);
+  }
+}
+
+@keyframes pac-man-center {
+  0% {
+    transform: rotate(40deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(40deg);
+  }
 }
 
 @keyframes pacman-pellet {
-  0%{ 
+  0% {
     opacity: 7;
-    box-shadow: 
-      70px 0 0 0 $pelletColor,
-      120px 0 0 0 $pelletColor,
-      170px 0 0 0 $pelletColor,
-      220px 0 0 0 $pelletColor
-    ;
+    box-shadow:
+    70px 0 0 0 $pellet-color,
+    120px 0 0 0 $pellet-color,
+    170px 0 0 0 $pellet-color,
+    220px 0 0 0 $pellet-color;
   }
-  100% { 
-    box-shadow: 
-      20px 0 0 0 $pelletColor,
-      70px 0 0 0 $pelletColor,
-      120px 0 0 0 $pelletColor,
-      170px 0 0 0 $pelletColor
-    ;
+
+  100% {
+    box-shadow:
+    20px 0 0 0 $pellet-color,
+    70px 0 0 0 $pellet-color,
+    120px 0 0 0 $pellet-color,
+    170px 0 0 0 $pellet-color;
   }
-  
 }
