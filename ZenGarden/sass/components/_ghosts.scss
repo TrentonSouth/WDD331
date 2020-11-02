@@ -1,0 +1,46 @@
+// Animation Styles
+
+.extra2 {
+  animation: enterRight .5s ease both;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+@keyframes enterRight {
+  0% {
+    opacity: 0;
+    right: -150px;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    right: 5%;
+  }
+}
+
+.extra3 {
+  animation: enterLeft .5 ease both;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+@keyframes enterLeft {
+  0% {
+    left: -150px;
+    opacity: 0;
+
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 5%;
+  }
+}
