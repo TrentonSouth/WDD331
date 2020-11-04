@@ -149,8 +149,8 @@ body {
 body {
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
   margin: auto;
+  overflow-x: hidden;
   padding: 3%;
 }
 
@@ -264,10 +264,6 @@ a:hover {
   text-transform: uppercase;
 }
 
-.design-selection {
-  padding: 2.5rem 0;
-}
-
 .design-archives {
   padding: 2.5rem 0;
   text-align: right;
@@ -279,74 +275,6 @@ a:hover {
 
 .zen-resources ul {
   text-align: center;
-}
-
-.next a,
-.viewall a {
-  border-radius: 50%;
-  color: #fff;
-  display: inline-block;
-  margin: .2rem;
-  text-decoration: none;
-}
-
-.next a {
-  background-color: #e22840;
-  padding: 10px 30px;
-}
-
-.viewall a {
-  background-color: #ffc0cb;
-  padding: 10px 23px;
-}
-
-.view-css,
-.css-resources,
-.zen-faq,
-.zen-submit,
-.zen-translations {
-  display: inline-block;
-  margin: 1rem 0;
-}
-
-.view-css a,
-.css-resources a,
-.zen-faq a,
-.zen-submit a,
-.zen-translations a {
-  border-radius: 50%;
-  color: #fff;
-  display: inline;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-.view-css a {
-  background-color: #ffa500;
-}
-
-.css-resources a {
-  background-color: #8fd4ff;
-}
-
-.css-resources abbr {
-  color: #fff;
-}
-
-.zen-faq a {
-  background-color: #e22840;
-}
-
-.zen-faq abbr {
-  color: #fff;
-}
-
-.zen-submit a {
-  background-color: #ffc0cb;
-}
-
-.zen-translations a {
-  background-color: #ffa500;
 }
 
 .extra2 {
@@ -739,6 +667,78 @@ footer :nth-child(5) {
   footer :nth-child(5) {
     padding: 10px 30px;
   }
+}
+
+.design-selection {
+  padding: 2.5rem 0;
+}
+
+.next a,
+.viewall a {
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  margin: .2rem;
+  text-decoration: none;
+}
+
+.next a {
+  background-color: #e22840;
+  padding: 10px 30px;
+}
+
+.viewall a {
+  background-color: #ffc0cb;
+  padding: 10px 23px;
+}
+
+.view-css,
+.css-resources,
+.zen-faq,
+.zen-submit,
+.zen-translations {
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.view-css a,
+.css-resources a,
+.zen-faq a,
+.zen-submit a,
+.zen-translations a {
+  border-radius: 50%;
+  color: #fff;
+  display: inline;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.view-css a {
+  background-color: #ffa500;
+}
+
+.css-resources a {
+  background-color: #8fd4ff;
+}
+
+.css-resources abbr {
+  color: #fff;
+}
+
+.zen-faq a {
+  background-color: #e22840;
+}
+
+.zen-faq abbr {
+  color: #fff;
+}
+
+.zen-submit a {
+  background-color: #ffc0cb;
+}
+
+.zen-translations a {
+  background-color: #ffa500;
 }
 
 .extra2,
