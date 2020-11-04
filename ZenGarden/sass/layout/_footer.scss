@@ -32,7 +32,7 @@ footer :nth-child(5) {
   background-color: $color-1;
 }
 
-@include breakpoint(medium) {
+@include breakpoint(large) {
   footer :first-child {
     padding: 10px 19px;
   }
