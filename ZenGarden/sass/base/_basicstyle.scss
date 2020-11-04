@@ -1,6 +1,12 @@
 body {
   color: $color-6;
   font-family: $primary-font;
+  overflow-x: hidden;
+  padding: 3%;
+
+  @include breakpoint(medium) {
+    padding: 0;
+  }
 }
 
 h1 {
@@ -8,89 +14,83 @@ h1 {
   font-family: $secondary-font;
   font-size: 2.5rem;
   font-weight: 300;
-  padding: .5rem;
+  padding: 5% 0 0 5%;
 
   @include breakpoint(medium) {
     font-size: 3rem;
   }
 
   @include breakpoint(large) {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
 h2 {
   font-size: 1.5rem;
-  padding: 0 .5rem 1rem;
+  padding: 0 5%;
 
   @include breakpoint(large) {
-    font-size: 2.5rem;
-    margin: 1em 0 1.4em;
+    font-size: 2rem;
   }
 }
 
 h3 {
+  font-family: $secondary-font;
   font-size: 1.5rem;
 }
 
 p {
   line-height: 1.15;
-  margin: 1rem;
   padding-bottom: 1rem;
 }
 
 abbr {
-  color: $color-2;
+  text-decoration: none;
 }
 
-.summary {
-  margin: 2.5rem 1.5rem;
+a {
+  color: $color-2;
+
+  &:hover {
+    color: $color-8;
+  }
+}
+
+.summary,
+.preamble,
+.participation,
+.requirements {
   text-align: right;
 }
 
 .summary :last-child {
-  padding: 1.5rem 0;
-}
-
-.preamble {
-  margin: 2.5rem 1.5rem;
-  text-align: right;
-}
-
-.explanation {
-  margin: 2.5rem 1.5rem;
-}
-
-.participation {
-  margin: 2.5rem 1.5rem;
-  text-align: right;
-}
-
-.benefits {
-  margin: 2.5rem 1.5rem;
+  padding-top: 1.5rem 0;
 }
 
 .requirements {
-  margin: 2.5rem 1.5rem;
-  text-align: right;
-}
-
-.requirements :last-child {
-  padding: 2rem 0;
-  text-align: center;
+  :nth-child(6) {
+    border-top: 20px dotted $color-6;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+  }
 }
 
 .design-selection {
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 0;
 }
 
 .design-archives {
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 0;
   text-align: right;
 }
 
 .zen-resources {
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 0;
+
+  ul {
+    text-align: center;
+  }
 }
 
 .next,
@@ -139,10 +139,6 @@ abbr {
 .view-css {
   a {
     background-color: $color-5;
-  }
-
-  abbr {
-    color: $color-6;
   }
 }
 
