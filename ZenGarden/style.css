@@ -219,6 +219,10 @@ a:hover {
   text-align: right;
 }
 
+.summary {
+  padding-top: 15%;
+}
+
 .summary :last-child {
   padding-top: 1.5rem 0;
 }
@@ -361,10 +365,10 @@ a:hover {
 body {
   display: -ms-grid;
   display: grid;
-  grid-gap: 3%;
-  -ms-grid-rows: 100px;
+  grid-gap: 2%;
+  -ms-grid-rows: 75px;
   -ms-grid-columns: (1fr)[2];
-      grid-template: 100px/repeat(2, 1fr);
+      grid-template: 75px/repeat(2, 1fr);
   margin: auto;
   max-width: 900px;
 }
@@ -372,11 +376,10 @@ body {
 body .page-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 8;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: 1 / 1 / 9 / 3;
+  grid-area: 1 / 1 / -1 / 3;
+  grid-gap: 2%;
   -ms-grid-rows: auto;
   -ms-grid-columns: (1fr)[2];
       grid-template: auto/repeat(2, 1fr);
@@ -390,6 +393,7 @@ body .page-wrapper .intro {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 1 / 1 / 2 / 3;
+  grid-gap: 2%;
   -ms-grid-rows: auto;
   -ms-grid-columns: (1fr)[2];
       grid-template: auto/repeat(2, 1fr);
@@ -464,6 +468,7 @@ body .page-wrapper #zen-supporting .requirements {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 4 / 1 / 5 / 3;
+  grid-gap: 2%;
   -ms-grid-rows: auto;
   -ms-grid-columns: (1fr)[2];
       grid-template: auto/repeat(2, 1fr);
@@ -668,74 +673,54 @@ footer :nth-child(5) {
   }
 }
 
-.extra2 {
-  -webkit-animation: enterLeft 4s linear infinite;
-          animation: enterLeft 4s linear infinite;
-  content: url("./svg/blue_ghost.svg");
+.extra2,
+.extra3,
+.extra4,
+.extra5,
+.extra6 {
+  max-width: 350px;
   overflow: hidden;
   position: relative;
   width: auto;
   z-index: -1;
 }
 
-.extra2:hover {
+.extra2:hover,
+.extra3:hover,
+.extra4:hover,
+.extra5:hover,
+.extra6:hover {
   content: url("./svg/dark_blue_ghost.svg");
 }
 
-.extra3 {
-  -webkit-animation: enterRight 4s linear infinite;
-          animation: enterRight 4s linear infinite;
-  content: url("./svg/red_ghost.svg");
-  overflow: hidden;
-  position: relative;
-  width: auto;
-  z-index: -1;
-}
-
-.extra3:hover {
-  content: url("./svg/dark_blue_ghost.svg");
-}
-
-.extra4 {
-  -webkit-animation: enterLeft 4s linear infinite;
-          animation: enterLeft 4s linear infinite;
-  content: url("./svg/pink_ghost.svg");
-  overflow: hidden;
-  position: relative;
-  width: auto;
-  z-index: -1;
-}
-
-.extra4:hover {
-  content: url("./svg/dark_blue_ghost.svg");
-}
-
-.extra5 {
-  -webkit-animation: enterRight 4s linear infinite;
-          animation: enterRight 4s linear infinite;
-  content: url("./svg/orange_ghost.svg");
-  overflow: hidden;
-  position: relative;
-  width: auto;
-  z-index: -1;
-}
-
-.extra5:hover {
-  content: url("./svg/dark_blue_ghost.svg");
-}
-
+.extra2,
+.extra4,
 .extra6 {
   -webkit-animation: enterLeft 4s linear infinite;
           animation: enterLeft 4s linear infinite;
-  content: url("./svg/blue_ghost.svg");
-  overflow: hidden;
-  position: relative;
-  width: auto;
-  z-index: -1;
 }
 
-.extra6:hover {
-  content: url("./svg/dark_blue_ghost.svg");
+.extra3,
+.extra5 {
+  -webkit-animation: enterRight 4s linear infinite;
+          animation: enterRight 4s linear infinite;
+}
+
+.extra2,
+.extra6 {
+  content: url("./svg/blue_ghost.svg");
+}
+
+.extra3 {
+  content: url("./svg/red_ghost.svg");
+}
+
+.extra4 {
+  content: url("./svg/pink_ghost.svg");
+}
+
+.extra5 {
+  content: url("./svg/orange_ghost.svg");
 }
 
 @-webkit-keyframes enterRight {

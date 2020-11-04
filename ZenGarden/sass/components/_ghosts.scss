@@ -1,8 +1,11 @@
 // Animation Styles
 
-.extra2 {
-  animation: enterLeft 4s linear infinite;
-  content: url('./svg/blue_ghost.svg');
+.extra2,
+.extra3,
+.extra4,
+.extra5,
+.extra6 {
+  max-width: 350px;
   overflow: hidden;
   position: relative;
   width: auto;
@@ -11,58 +14,35 @@
   &:hover {
     content: url('./svg/dark_blue_ghost.svg');
   }
+}
+
+.extra2,
+.extra4,
+.extra6 {
+  animation: enterLeft 4s linear infinite;
+}
+
+.extra3,
+.extra5 {
+  animation: enterRight 4s linear infinite;
+
+}
+
+.extra2,
+.extra6 {
+  content: url('./svg/blue_ghost.svg');
 }
 
 .extra3 {
-  animation: enterRight 4s linear infinite;
   content: url('./svg/red_ghost.svg');
-  overflow: hidden;
-  position: relative;
-  width: auto;
-  z-index: -1;
-
-  &:hover {
-    content: url('./svg/dark_blue_ghost.svg');
-  }
 }
 
 .extra4 {
-  animation: enterLeft 4s linear infinite;
   content: url('./svg/pink_ghost.svg');
-  overflow: hidden;
-  position: relative;
-  width: auto;
-  z-index: -1;
-
-  &:hover {
-    content: url('./svg/dark_blue_ghost.svg');
-  }
 }
 
 .extra5 {
-  animation: enterRight 4s linear infinite;
   content: url('./svg/orange_ghost.svg');
-  overflow: hidden;
-  position: relative;
-  width: auto;
-  z-index: -1;
-
-  &:hover {
-    content: url('./svg/dark_blue_ghost.svg');
-  }
-}
-
-.extra6 {
-  animation: enterLeft 4s linear infinite;
-  content: url('./svg/blue_ghost.svg');
-  overflow: hidden;
-  position: relative;
-  width: auto;
-  z-index: -1;
-
-  &:hover {
-    content: url('./svg/dark_blue_ghost.svg');
-  }
 }
 
 @keyframes enterRight {
