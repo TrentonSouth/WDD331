@@ -1,55 +1,55 @@
-footer {
-  padding: 6%;
-  text-align: center;
-}
-
 footer > * {
   border-radius: $button-radius;
   color: $color-6;
-  margin: 3.5rem 0;
+  display: inline-block;
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-footer :first-child {
-  background-color: $color-1;
-}
+footer {
+  padding: 6%;
+  text-align: center;
 
-footer :nth-child(2) {
-  background-color: $color-3;
-}
-
-footer :nth-child(3) {
-  background-color: $color-4;
-}
-
-footer :nth-child(4) {
-  background-color: $color-5;
-}
-
-footer :nth-child(5) {
-  background-color: $color-1;
-}
-
-@include breakpoint(large) {
-  footer :first-child {
-    padding: 10px 19px;
+  :first-child {
+    background-color: $color-1;
   }
 
-  footer :nth-child(2) {
-    padding: 10px 27px;
+  :nth-child(2) {
+    background-color: $color-3;
   }
 
-  footer :nth-child(3) {
-    padding: 10px 30px;
+  :nth-child(3) {
+    background-color: $color-4;
   }
 
-  footer :nth-child(4) {
-    padding: 10px 23px;
+  :nth-child(4) {
+    background-color: $color-5;
   }
 
-  footer :nth-child(5) {
-    padding: 10px 30px;
+  :nth-child(5) {
+    background-color: $color-1;
+  }
+
+  @include breakpoint(large) {
+    :first-child {
+      padding: 10px 19px;
+    }
+
+    :nth-child(2) {
+      padding: 10px 27px;
+    }
+
+    :nth-child(3) {
+      padding: 10px 30px;
+    }
+
+    :nth-child(4) {
+      padding: 10px 23px;
+    }
+
+    :nth-child(5) {
+      padding: 10px 30px;
+    }
   }
 }
