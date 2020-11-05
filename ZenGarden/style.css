@@ -764,14 +764,14 @@ footer :nth-child(5) {
 .extra2,
 .extra4,
 .extra6 {
-  -webkit-animation: enterLeft 4s linear infinite;
-          animation: enterLeft 4s linear infinite;
+  -webkit-animation: enterLeft 10s linear infinite;
+          animation: enterLeft 10s linear infinite;
 }
 
 .extra3,
 .extra5 {
-  -webkit-animation: enterRight 4s linear infinite;
-          animation: enterRight 4s linear infinite;
+  -webkit-animation: enterRight 10s linear infinite;
+          animation: enterRight 10s linear infinite;
 }
 
 .extra2,
