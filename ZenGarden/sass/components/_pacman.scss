@@ -1,6 +1,6 @@
 $pacman-color: #fed75a;
 $pellet-color: white;
-$pacman-size: 70px;
+$pacman-size: 140px;
 
 
 .extra1 {
@@ -15,7 +15,7 @@ $pacman-size: 70px;
 .extra1,
 .extra1::before {
   background: $pacman-color;
-  height: calc(70px/2);
+  height: $pacman-size / 2;
   width: $pacman-size;
 }
 
@@ -23,7 +23,7 @@ $pacman-size: 70px;
   border-radius: 0 0 100em 100em;
   content: '';
   display: block;
-  margin-top: calc(70px/2);
+  margin-top: $pacman-size / 2;
   position: absolute;
   -webkit-transform-origin: top;
           transform-origin: top;
@@ -38,8 +38,8 @@ $pacman-size: 70px;
   content: '';
   display: block;
   height: 20px;
-  margin-left: calc((70px / 2) - 10px);
-  margin-top: calc((70px / 2) - 10px);
+  margin-left: $pacman-size / 2 - 10;
+  margin-top: $pacman-size / 2 - 10;
   position: absolute;
   width: 20px;
   -webkit-transform-origin: pac-man-center;
