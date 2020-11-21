@@ -28,7 +28,7 @@
     -o-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
     -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
     animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
-    border-radius: 100em;
+    border-radius: 0;
     content: '';
     display: block;
     height: 20px;
@@ -36,6 +36,10 @@
     margin-top: $pacman-size / 2 - 10;
     position: absolute;
     width: 20px;
+    -webkit-transform-origin: pac-man-center;
+            transform-origin: pac-man-center;
+    -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+            animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
   }
 }
 
