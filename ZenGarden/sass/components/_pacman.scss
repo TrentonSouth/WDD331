@@ -21,25 +21,26 @@
     width: $pacman-size;
   }
 
-.extra1::after {
-  //@include animation(pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear);
-  @include transform-origin(pac-man-center);
-  -moz-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
-  -o-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
-  -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
-  animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
-  border-radius: 0;
-  content: '';
-  display: block;
-  height: 20px;
-  margin-left: $pacman-size / 2 - 10;
-  margin-top: $pacman-size / 2 - 10;
-  position: absolute;
-  width: 20px;
-  -webkit-transform-origin: pac-man-center;
-          transform-origin: pac-man-center;
-  -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
-          animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+  &::after {
+    //@include animation(pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear);
+    @include transform-origin(pac-man-center);
+    -moz-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+    -o-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+    -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+    animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+    border-radius: 0;
+    content: '';
+    display: block;
+    height: 20px;
+    margin-left: $pacman-size / 2 - 10;
+    margin-top: $pacman-size / 2 - 10;
+    position: absolute;
+    width: 20px;
+    -webkit-transform-origin: pac-man-center;
+            transform-origin: pac-man-center;
+    -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+            animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+  }
 }
 
 @keyframes eating-top {
