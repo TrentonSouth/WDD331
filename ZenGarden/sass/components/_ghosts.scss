@@ -5,7 +5,7 @@
 .extra4,
 .extra5,
 .extra6 {
-  max-width: 350px;
+  max-width: 250px;
   overflow: hidden;
   position: relative;
   width: auto;
@@ -31,6 +31,7 @@
 .extra2,
 .extra6 {
   content: url('./svg/blue_ghost.svg');
+
 }
 
 .extra3 {
@@ -63,4 +64,11 @@
   100% {
     left: 175%;
   }
+}
+
+#zen-preamble:before {
+  content: url('./svg/desktop_down_right_pp.svg');
+  display: inline;
+  max-width: 200px;
+  grid-area: 
 }
