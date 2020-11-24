@@ -1,5 +1,56 @@
+#zen-preamble {
+   position: relative;
+}
+
 #zen-preamble:before {
    content: url('./svg/desktop_down_right_pp.svg');
-   display: inline;
+   width: 100%;
    max-width: 200px;
+   position: absolute;
+   top: -150px;
+   left: -600px;
  }
+
+ #zen-preamble:after {
+   content: url('./svg/desktop_down_left_pp.svg');
+   width: 100%;
+   max-width: 200px;
+   position: absolute;
+   top: 150px;
+   left: -250px;
+ }
+
+ #zen-participation {
+   position: relative;
+}
+
+#zen-participation:before {
+   content: url('./svg/desktop_down_right.svg');
+   width: 100%;
+   max-width: 200px;
+   position: absolute;
+   top: -50px;
+   left: -600px;   
+}
+
+#zen-participation:after {
+   content: url('./svg/desktop_down_left.svg');
+   width: 100%;
+   max-width: 200px;
+   position: absolute;
+   top: 250px;
+   left: -200px;   
+}
+
+#zen-benefits {
+   position: relative;
+}
+
+#zen-benefits:after {
+   content: url('./svg/desktop_down_pp.svg');
+   width: 100%;
+   max-width: 200px;
+   position: absolute;
+   top: 100px;
+   left: -150px;   
+}
