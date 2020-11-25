@@ -67,8 +67,6 @@
 }
 
 #zen-preamble:before {
+grid-area: 2/1/3/2;
   content: url('./svg/desktop_down_right_pp.svg');
-  display: inline;
-  max-width: 200px;
-  grid-area: 
 }
