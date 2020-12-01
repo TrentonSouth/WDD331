@@ -72,6 +72,8 @@ a {
   }
 }
 
+
+
 .summary,
 .preamble,
 .participation,
@@ -131,9 +133,23 @@ a {
 .participation,
 .explanation,
 .preamble {
-  padding-top: 260px;
+  border-top: 10px dashed $color-6;
+  padding: 10% 0;
+
+  @include breakpoint(medium) {
+    border: 0;
+    padding-top: 200px;
+  }
 
   @include breakpoint(large) {
     padding: 0;
+  }
+}
+
+.preamble {
+  margin-top: 5rem;
+
+  @include breakpoint(medium) {
+    margin-top: 0;
   }
 }
