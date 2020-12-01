@@ -1,56 +1,98 @@
-#zen-preamble {
-   position: relative;
+.preamble {
+  position: relative;
+
+  &::before {
+    content: url('./svg/mobile_down_left_down_pp.svg');
+    margin: -20% -25%;
+    max-width: 200px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    content: url('./svg/mobile_down_pp.svg');
+    left: 0;
+    top: 0;
+    margin: 87% -25%;
+    max-width: 200px;
+    position: absolute;
+    width: 100%;
+  }
 }
 
-#zen-preamble:before {
-   content: url('./svg/desktop_down_right_pp.svg');
-   width: 100%;
-   max-width: 200px;
-   position: absolute;
-   top: -150px;
-   left: -600px;
- }
+#zen-participation {
+  position: relative;
 
- #zen-preamble:after {
-   content: url('./svg/desktop_down_left_pp.svg');
-   width: 100%;
-   max-width: 200px;
-   position: absolute;
-   top: 150px;
-   left: -250px;
- }
+  &::before {
+    content: url('./svg/mobile_down_right_down.svg');
+    margin: -67% -125%;
+    max-width: 200px;
+    position: absolute;
+    width: 100%;
+  }
 
- #zen-participation {
-   position: relative;
-}
-
-#zen-participation:before {
-   content: url('./svg/desktop_down_right.svg');
-   width: 100%;
-   max-width: 200px;
-   position: absolute;
-   top: -50px;
-   left: -600px;   
-}
-
-#zen-participation:after {
-   content: url('./svg/desktop_down_left.svg');
-   width: 100%;
-   max-width: 200px;
-   position: absolute;
-   top: 250px;
-   left: -200px;   
+  &::after {
+    content: url('./svg/mobile_down_left_down.svg');
+    left: -200px;
+    margin: -15% 15%;
+    max-width: 200px;
+    position: absolute;
+    width: 100%;
+  }
 }
 
 #zen-benefits {
-   position: relative;
+  position: relative;
+
+  &::after {
+    content: url('./svg/mobile_down_pp.svg');
+    left: -150px;
+    margin: 45% 0;
+    max-width: 200px;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+  }
 }
 
-#zen-benefits:after {
-   content: url('./svg/desktop_down_pp.svg');
-   width: 100%;
-   max-width: 200px;
-   position: absolute;
-   top: 100px;
-   left: -150px;   
+@include breakpoint(large) {
+  #zen-preamble {
+    &::before {
+      content: url('./svg/desktop_down_right_pp.svg');
+      left: -300px;
+      top: -150px;
+    }
+
+    &::after {
+      content: url('./svg/desktop_down_left_pp.svg');
+      left: -100px;
+      margin-top: 5%;
+      top: 250px;
+    }
+  }
+
+  #zen-participation {
+    &::before {
+      content: url('./svg/desktop_down_right.svg');
+      left: -100px;
+      margin-top: 15%;
+      top: -50px;
+    }
+
+    &::after {
+      content: url('./svg/desktop_down_left.svg');
+      margin-top: 15%;
+      top: 350px;
+    }
+  }
+
+  #zen-benefits {
+    &::after {
+      content: url('./svg/desktop_down_pp.svg');
+      margin-top: 15%;
+      top: 145px;
+    }
+  }
 }

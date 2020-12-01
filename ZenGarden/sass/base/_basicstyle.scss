@@ -42,8 +42,13 @@ h3 {
   color: $color-2;
   font-family: $secondary-font;
   font-size: 1.2rem;
-  padding-top: 3rem;
 
+  @include breakpoint(large) {
+    padding-top: 25%;
+  }
+}
+
+.resources {
   @include breakpoint(large) {
     padding-top: 0;
   }
@@ -96,7 +101,7 @@ a {
 
 .requirements {
   :nth-child(6) {
-    border-top: 20px dotted $color-6;
+    border-top: 20px dashed $color-6;
     margin-top: 3rem;
     padding: 4rem 0;
     text-align: center;
@@ -119,4 +124,16 @@ a {
 
 .extra2 {
   padding-top: 5rem;
+}
+
+.requirements,
+.benefits,
+.participation,
+.explanation,
+.preamble {
+  padding-top: 260px;
+
+  @include breakpoint(large) {
+    padding: 0;
+  }
 }
