@@ -1,3 +1,79 @@
+
+.preamble {
+  position: relative;
+
+  &::before {
+    content: url('./svg/mobile_down_left_down_pp.svg');
+    left: 50px;
+    position: absolute;
+    top: -140px;
+  }
+
+  &::after {
+    content: url('./svg/mobile_down_pp.svg');
+    left: 0;
+    top: 0;
+    margin: 75% -25%;
+    max-width: 200px;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+#zen-participation {
+  position: relative;
+
+  &::before {
+    content: url('./svg/mobile_down_right_down.svg');
+    margin: -65% -125%;
+    max-width: 200px;
+    position: absolute;
+    width: 100%;
+  }
+
+  &::after {
+    content: url('./svg/mobile_down_left_down.svg');
+    left: -200px;
+    margin: -15% 15%;
+    max-width: 200px;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+#zen-benefits {
+  position: relative;
+
+  &::after {
+    content: url('./svg/mobile_down_pp.svg');
+    left: -150px;
+    margin: 32% 0;
+    max-width: 200px;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+  }
+}
+
+
+
+.requirements {
+  position: relative;
+}
+
+.requirements::after {
+  position: absolute;
+  content: url('./svg/bottom_line.svg');
+  top: 350px;
+  left: -50px;
+  max-width: 200px;
+  width: 100%;
+  @include breakpoint(medium) {
+
+  }
+
+}
+
 @include breakpoint(medium) {
   .preamble {
     position: relative;

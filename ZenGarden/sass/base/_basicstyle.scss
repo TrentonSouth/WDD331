@@ -103,7 +103,7 @@ a {
 
 .requirements {
   :nth-child(6) {
-    border-top: 20px dashed $color-6;
+  //  border-top: 20px dashed $color-6;
     margin-top: 3rem;
     padding: 4rem 0;
     text-align: center;
@@ -133,7 +133,7 @@ a {
 .participation,
 .explanation,
 .preamble {
-  border-top: 10px dashed $color-6;
+ // border-top: 10px dashed $color-6;
   padding: 10% 0;
 
   @include breakpoint(medium) {

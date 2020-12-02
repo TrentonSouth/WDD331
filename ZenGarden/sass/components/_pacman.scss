@@ -3,6 +3,53 @@
   @include transform-origin(bottom);
   background: $pacman-color;
   border-radius: 100em 100em 0 0;
+  height: $pacman-small / 2;
+  margin: 5em 0 0;
+  width: $pacman-small;
+
+  &::before {
+    @include animation(eating-bottom .5s infinite);
+    @include transform(rotate(80deg));
+    @include transform-origin(top);
+    background: $pacman-color;
+    border-radius: 0 0 100em 100em;
+    content: '';
+    display: block;
+    height: $pacman-small / 2;
+    margin-top: $pacman-small / 2;
+    position: absolute;
+    width: $pacman-small;
+  }
+
+  &::after {
+    //@include animation(pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear);
+    @include transform-origin(pac-man-center);
+    -moz-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+    -o-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+    -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+            animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+    border-radius: 0;
+    content: '';
+    display: block;
+    height: 20px;
+    margin-left: $pacman-small / 2 - 10;
+    margin-top: $pacman-small / 2 - 10;
+    position: absolute;
+    width: 20px;
+    -webkit-transform-origin: pac-man-center;
+            transform-origin: pac-man-center;
+    -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+            animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+  }
+}
+
+
+@include breakpoint(medium) {
+.extra1 {
+  @include animation(eating-top .5s infinite);
+  @include transform-origin(bottom);
+  background: $pacman-color;
+  border-radius: 100em 100em 0 0;
   height: $pacman-size / 2;
   margin: 5em 0 0;
   width: $pacman-size;
@@ -42,7 +89,7 @@
             animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
   }
 }
-
+}
 @keyframes eating-top {
   0% {
     transform: rotate(-40deg);
