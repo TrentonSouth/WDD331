@@ -22,12 +22,11 @@
   }
 
   &::after {
-    //@include animation(pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear);
     @include transform-origin(pac-man-center);
     -moz-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
     -o-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
     -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
-            animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+    animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
     border-radius: 0;
     content: '';
     display: block;
@@ -37,32 +36,33 @@
     position: absolute;
     width: 15px;
     -webkit-transform-origin: pac-man-center;
-            transform-origin: pac-man-center;
+    transform-origin: pac-man-center;
     -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
-            animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
+    animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
   }
 }
 
 
 @include breakpoint(medium) {
-.extra1 {
-  height: $pacman-size / 2;
-  width: $pacman-size;
-
-  &::before {
+  .extra1 {
     height: $pacman-size / 2;
-    margin-top: $pacman-size / 2;
     width: $pacman-size;
-  }
 
-  &::after {
-    height: 20px;
-    margin-left: $pacman-size / 2 - 10;
-    margin-top: $pacman-size / 2 - 10;
-    width: 20px;
+    &::before {
+      height: $pacman-size / 2;
+      margin-top: $pacman-size / 2;
+      width: $pacman-size;
+    }
+
+    &::after {
+      height: 20px;
+      margin-left: $pacman-size / 2 - 10;
+      margin-top: $pacman-size / 2 - 10;
+      width: 20px;
+    }
   }
 }
-}
+
 @keyframes eating-top {
   0% {
     transform: rotate(-40deg);
