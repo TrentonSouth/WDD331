@@ -675,11 +675,11 @@ footer :nth-child(5) {
   -o-animation: eating-bottom 0.5s infinite;
   -webkit-animation: eating-bottom 0.5s infinite;
   animation: eating-bottom 0.5s infinite;
-  -moz-transition: "rotate(80deg)";
-  -ms-transform: "rotate(80deg)";
-  -o-transform: "rotate(80deg)";
-  -webkit-transition: "rotate(80deg)";
-  transition: "rotate(80deg)";
+  -moz-transition: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  -o-transform: rotate(80deg);
+  -webkit-transform: rotate(80deg);
+  transform: rotate(80deg);
   -moz-transform-origin: top;
   -ms-transform-origin: top;
   -o-transform-origin: top;

@@ -3,8 +3,8 @@
   -moz-transition: $options;
   -ms-transform: $options;
   -o-transform: $options;
-  -webkit-transition: $options;
-  transition: $options;
+  -webkit-transform: $options;
+  transform: $options;
 }
 
 @mixin transform-origin($options) {

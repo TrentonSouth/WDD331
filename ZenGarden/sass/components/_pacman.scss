@@ -9,7 +9,7 @@
 
   &::before {
     @include animation(eating-bottom .5s infinite);
-    @include transform('rotate(80deg)');
+    @include transform(rotate(80deg));
     @include transform-origin(top);
     background: $pacman-color;
     border-radius: 0 0 100em 100em;
