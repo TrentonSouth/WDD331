@@ -320,6 +320,12 @@ a:hover {
   }
 }
 
+@media (min-width: 945px) {
+  .preamble {
+    margin: -125px 0 0;
+  }
+}
+
 body {
   display: -ms-grid;
   display: grid;
@@ -1018,53 +1024,105 @@ footer :nth-child(5) {
 }
 
 @media (min-width: 545px) {
+  .preamble {
+    padding-bottom: 0;
+  }
   .preamble::before {
-    content: url("./svg/mobile_down_left_down_pp.svg");
-    max-width: 200px;
-    position: absolute;
-    top: -140px;
-    left: -120px;
+    left: 40%;
+    top: -10%;
   }
   .preamble::after {
-    content: url("./svg/mobile_down_pp.svg");
-    left: 0;
-    top: 0;
-    margin: 75% -25%;
-    max-width: 200px;
-    position: absolute;
-    width: 100;
+    top: 95%;
   }
 }
 
-#zen-participation {
+@media (min-width: 945px) {
+  .preamble::before {
+    content: url("./svg/desktop_down_right_pp.svg");
+    left: -140%;
+    top: -10%;
+  }
+  .preamble::after {
+    content: url("./svg/desktop_down_left_pp.svg");
+    left: -25%;
+    top: 65%;
+  }
+}
+
+.participation {
   padding: 36% 0;
   position: relative;
 }
 
-#zen-participation::before {
+.participation::before {
   content: url("./svg/mobile_down_right_down.svg");
   left: 30%;
   position: absolute;
   top: -10%;
 }
 
-#zen-participation::after {
+.participation::after {
   content: url("./svg/mobile_down_left_down.svg");
   left: 30%;
   position: absolute;
   top: 78%;
 }
 
-#zen-benefits {
+@media (min-width: 545px) {
+  .participation {
+    padding-bottom: 0;
+  }
+  .participation::after {
+    top: 97%;
+  }
+}
+
+@media (min-width: 945px) {
+  .participation {
+    padding: 0;
+  }
+  .participation::before {
+    content: url("./svg/desktop_down_right.svg");
+    left: -150%;
+    top: 0;
+  }
+  .participation::after {
+    content: url("./svg/desktop_down_left.svg");
+    left: -30%;
+    top: 85%;
+  }
+}
+
+.benefits {
   padding-bottom: 36%;
   position: relative;
 }
 
-#zen-benefits::after {
+.benefits::after {
   content: url("./svg/mobile_down_pp.svg");
   left: 30%;
   position: absolute;
   top: 50%;
+}
+
+@media (min-width: 545px) {
+  .benefits {
+    padding-bottom: 0;
+  }
+  .benefits::after {
+    top: 98%;
+  }
+}
+
+@media (min-width: 945px) {
+  .benefits {
+    margin: -100px 0 45px;
+  }
+  .benefits::after {
+    content: url("./svg/desktop_down_pp.svg");
+    left: -40%;
+    top: 100%;
+  }
 }
 
 .requirements {
@@ -1072,87 +1130,23 @@ footer :nth-child(5) {
 }
 
 .requirements::after {
-  position: absolute;
-  top: 75%;
-  left: -100px;
   content: url("./svg/bottom_line.svg");
+  left: -50%;
+  position: absolute;
+  top: 76%;
 }
 
 @media (min-width: 545px) {
   .requirements::after {
-    top: 725px;
     left: -250px;
-    max-width: 200px;
+    top: 725px;
   }
 }
 
 @media (min-width: 945px) {
   .requirements::after {
-    top: 440px;
     left: -45px;
-  }
-}
-
-@media (min-width: 545px) {
-  #zen-participation {
-    position: relative;
-  }
-  #zen-participation::before {
-    content: url("./svg/mobile_down_right_down.svg");
-    margin: -65% -125%;
-    max-width: 200px;
-    position: absolute;
-    width: 100;
-  }
-  #zen-participation::after {
-    content: url("./svg/mobile_down_left_down.svg");
-    left: -200px;
-    margin: -15% 15%;
-    max-width: 200px;
-    position: absolute;
-    width: 100;
-  }
-  #zen-benefits {
-    position: relative;
-  }
-  #zen-benefits::after {
-    content: url("./svg/mobile_down_pp.svg");
-    left: -150px;
-    margin: 32% 0;
-    max-width: 200px;
-    position: absolute;
-    top: 100px;
-    width: 100%;
-  }
-}
-
-@media (min-width: 945px) {
-  #zen-preamble::before {
-    content: url("./svg/desktop_down_right_pp.svg");
-    left: -450px;
-    top: -200px;
-  }
-  #zen-preamble::after {
-    content: url("./svg/desktop_down_left_pp.svg");
-    left: -100px;
-    margin-top: 5%;
-    top: 250px;
-  }
-  #zen-participation::before {
-    content: url("./svg/desktop_down_right.svg");
-    left: -100px;
-    margin-top: 15%;
-    top: -50px;
-  }
-  #zen-participation::after {
-    content: url("./svg/desktop_down_left.svg");
-    margin-top: 15%;
-    top: 350px;
-  }
-  #zen-benefits::after {
-    content: url("./svg/desktop_down_pp.svg");
-    margin-top: 15%;
-    top: 145px;
+    top: 440px;
   }
 }
 /*# sourceMappingURL=style.css.map */
