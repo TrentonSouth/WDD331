@@ -592,7 +592,7 @@ footer :nth-child(5) {
 .extra4,
 .extra5,
 .extra6 {
-  max-width: 250px;
+  max-width: 150px;
   overflow: hidden;
   position: relative;
   width: auto;
@@ -605,6 +605,16 @@ footer :nth-child(5) {
 .extra5:hover,
 .extra6:hover {
   content: url("./svg/dark_blue_ghost.svg");
+}
+
+@media (min-width: 545px) {
+  .extra2,
+  .extra3,
+  .extra4,
+  .extra5,
+  .extra6 {
+    max-width: 250px;
+  }
 }
 
 .extra2,
