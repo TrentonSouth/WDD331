@@ -169,7 +169,7 @@ h1 {
 
 @media (min-width: 545px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -999,60 +999,72 @@ footer :nth-child(5) {
 }
 
 .preamble {
+  padding-bottom: 36%;
   position: relative;
 }
 
 .preamble::before {
   content: url("./svg/mobile_down_left_down_pp.svg");
-  left: 0px;
+  left: 30%;
   position: absolute;
-  top: 0px;
-  width: 200px;
+  top: -30%;
 }
 
 .preamble::after {
   content: url("./svg/mobile_down_pp.svg");
-  left: 0;
-  top: 0;
-  margin: 0 0;
-  max-width: 200px;
+  left: 28%;
   position: absolute;
-  width: 100;
+  top: 70%;
+}
+
+@media (min-width: 545px) {
+  .preamble::before {
+    content: url("./svg/mobile_down_left_down_pp.svg");
+    max-width: 200px;
+    position: absolute;
+    top: -140px;
+    left: -120px;
+  }
+  .preamble::after {
+    content: url("./svg/mobile_down_pp.svg");
+    left: 0;
+    top: 0;
+    margin: 75% -25%;
+    max-width: 200px;
+    position: absolute;
+    width: 100;
+  }
 }
 
 #zen-participation {
+  padding: 36% 0;
   position: relative;
 }
 
 #zen-participation::before {
   content: url("./svg/mobile_down_right_down.svg");
-  margin: 0 0;
-  max-width: 200px;
+  left: 30%;
   position: absolute;
-  width: 100;
+  top: -10%;
 }
 
 #zen-participation::after {
   content: url("./svg/mobile_down_left_down.svg");
-  left: 0px;
-  margin: 0 0;
-  max-width: 200px;
+  left: 30%;
   position: absolute;
-  width: 100;
+  top: 78%;
 }
 
 #zen-benefits {
+  padding-bottom: 36%;
   position: relative;
 }
 
 #zen-benefits::after {
   content: url("./svg/mobile_down_pp.svg");
-  left: 0px;
-  margin: 0 0;
-  max-width: 200px;
+  left: 30%;
   position: absolute;
-  top: 100px;
-  width: 100;
+  top: 50%;
 }
 
 .requirements {
@@ -1082,26 +1094,6 @@ footer :nth-child(5) {
 }
 
 @media (min-width: 545px) {
-  .preamble {
-    position: relative;
-  }
-  .preamble::before {
-    content: url("./svg/mobile_down_left_down_pp.svg");
-    max-width: 200px;
-    position: absolute;
-    width: 100;
-    top: -140px;
-    left: -120px;
-  }
-  .preamble::after {
-    content: url("./svg/mobile_down_pp.svg");
-    left: 0;
-    top: 0;
-    margin: 75% -25%;
-    max-width: 200px;
-    position: absolute;
-    width: 100;
-  }
   #zen-participation {
     position: relative;
   }
