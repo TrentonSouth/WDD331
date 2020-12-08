@@ -655,7 +655,6 @@ footer :nth-child(5) {
 
 .extra1 {
   -moz-animation: eating-top 0.5s infinite;
-  -o-animation: eating-top 0.5s infinite;
   -webkit-animation: eating-top 0.5s infinite;
   animation: eating-top 0.5s infinite;
   -moz-transform-origin: bottom;
@@ -672,10 +671,9 @@ footer :nth-child(5) {
 
 .extra1::before {
   -moz-animation: eating-bottom 0.5s infinite;
-  -o-animation: eating-bottom 0.5s infinite;
   -webkit-animation: eating-bottom 0.5s infinite;
   animation: eating-bottom 0.5s infinite;
-  -moz-transition: rotate(80deg);
+  -moz-transform: rotate(80deg);
   -ms-transform: rotate(80deg);
   -o-transform: rotate(80deg);
   -webkit-transform: rotate(80deg);
@@ -702,7 +700,6 @@ footer :nth-child(5) {
   -webkit-transform-origin: pac-man-center;
   transform-origin: pac-man-center;
   -moz-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
-  -o-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
   -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
   animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
   border-radius: 0;
@@ -713,10 +710,6 @@ footer :nth-child(5) {
   margin-top: 42.5px;
   position: absolute;
   width: 15px;
-  -webkit-transform-origin: pac-man-center;
-  transform-origin: pac-man-center;
-  -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
-  animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
 }
 
 @media (min-width: 545px) {
@@ -776,7 +769,7 @@ footer :nth-child(5) {
 @keyframes pacman-pellet {
   0% {
     box-shadow: 70px 0 0 0 #fff, 120px 0 0 0 #fff, 170px 0 0 0 #fff, 220px 0 0 0 #fff;
-    opacity: 7;
+    opacity: 1;
   }
   100% {
     box-shadow: 20px 0 0 0 #fff, 70px 0 0 0 #fff, 120px 0 0 0 #fff, 170px 0 0 0 #fff;

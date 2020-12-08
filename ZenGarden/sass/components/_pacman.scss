@@ -24,7 +24,6 @@
   &::after {
     @include transform-origin(pac-man-center);
     -moz-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
-    -o-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
     -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
     animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
     border-radius: 0;
@@ -35,10 +34,6 @@
     margin-top: $pacman-small / 2 - 7.5;
     position: absolute;
     width: 15px;
-    -webkit-transform-origin: pac-man-center;
-    transform-origin: pac-man-center;
-    -webkit-animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
-    animation: pac-man-center .5s infinite, pacman-pellet .5s -.33s infinite linear;
   }
 }
 
@@ -112,7 +107,7 @@
     120px 0 0 0 $pellet-color,
     170px 0 0 0 $pellet-color,
     220px 0 0 0 $pellet-color;
-    opacity: 7;
+    opacity: 1;
   }
 
   100% {

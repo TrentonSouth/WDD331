@@ -1,6 +1,6 @@
 //prefix mixins
 @mixin transform($options) {
-  -moz-transition: $options;
+  -moz-transform: $options;
   -ms-transform: $options;
   -o-transform: $options;
   -webkit-transform: $options;
@@ -17,7 +17,6 @@
 
 @mixin animation($options) {
   -moz-animation: $options;
-  -o-animation: $options;
   -webkit-animation: $options;
   animation: $options;
 }
