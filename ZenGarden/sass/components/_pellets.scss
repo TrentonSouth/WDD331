@@ -64,13 +64,17 @@
 
 .requirements::after {
   position: absolute;
+  top: 75%;
+  left: -100px;
   content: url('./svg/bottom_line.svg');
-  top: 350px;
-  left: -50px;
-  max-width: 200px;
-  width: 100;
   @include breakpoint(medium) {
-
+  top: 725px;
+  left: -250px;
+  max-width: 200px;
+  }
+  @include breakpoint(large) {
+    top: 440px;
+    left: -45px;
   }
 
 }
@@ -130,7 +134,7 @@
       max-width: 200px;
       position: absolute;
       top: 100px;
-      width: 100;
+      width: 100%;
     }
   }
 }

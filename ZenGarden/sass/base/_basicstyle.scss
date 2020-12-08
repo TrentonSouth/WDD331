@@ -21,7 +21,7 @@ h1 {
   padding: 5% 0 0 5%;
 
   @include breakpoint(medium) {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   @include breakpoint(large) {
@@ -104,7 +104,6 @@ a {
 .requirements {
   :nth-child(6) {
   //  border-top: 20px dashed $color-6;
-    margin-top: 3rem;
     padding: 4rem 0;
     text-align: center;
     text-transform: uppercase;
