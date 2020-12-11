@@ -5,7 +5,7 @@
 .extra4,
 .extra5,
 .extra6 {
-  max-width: 250px;
+  max-width: 150px;
   overflow: hidden;
   position: relative;
   width: auto;
@@ -13,6 +13,10 @@
 
   &:hover {
     content: url('./svg/dark_blue_ghost.svg');
+  }
+
+  @include breakpoint(medium) {
+    max-width: 250px;
   }
 }
 

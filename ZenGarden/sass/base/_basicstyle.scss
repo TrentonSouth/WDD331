@@ -21,7 +21,7 @@ h1 {
   padding: 5% 0 0 5%;
 
   @include breakpoint(medium) {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
 
   @include breakpoint(large) {
@@ -72,8 +72,6 @@ a {
   }
 }
 
-
-
 .summary,
 .preamble,
 .participation,
@@ -103,8 +101,7 @@ a {
 
 .requirements {
   :nth-child(6) {
-  //  border-top: 20px dashed $color-6;
-    margin-top: 3rem;
+    //  border-top: 20px dashed $color-6;
     padding: 4rem 0;
     text-align: center;
     text-transform: uppercase;
@@ -133,7 +130,6 @@ a {
 .participation,
 .explanation,
 .preamble {
- // border-top: 10px dashed $color-6;
   padding: 10% 0;
 
   @include breakpoint(medium) {
@@ -151,5 +147,9 @@ a {
 
   @include breakpoint(medium) {
     margin-top: 0;
+  }
+
+  @include breakpoint(large) {
+    margin: -125px 0 0;
   }
 }
