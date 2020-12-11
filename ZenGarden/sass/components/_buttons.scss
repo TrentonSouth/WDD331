@@ -1,3 +1,13 @@
+footer {
+  a {
+    &:hover {
+      border-radius: 0;
+      color: $color-6;
+      font-weight: 900;
+    }
+  }
+}
+
 .next,
 .viewall {
   a {
@@ -6,6 +16,11 @@
     display: inline-block;
     margin: .2rem;
     text-decoration: none;
+
+    &:hover {
+      border-radius: 0;
+      font-weight: 900;
+    }
   }
 }
 
@@ -20,6 +35,15 @@
   a {
     background-color: $color-4;
     padding: 10px 23px;
+  }
+}
+
+.zen-resources {
+  a {
+    &:hover {
+      border-radius: 0;
+      font-weight: 900;
+    }
   }
 }
 
