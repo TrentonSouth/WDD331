@@ -1,3 +1,8 @@
+::before,
+::after {
+  z-index: -99;
+}
+
 .preamble {
   padding-bottom: 36%;
   position: relative;
